@@ -1,0 +1,489 @@
+body
+{
+	
+	background-image: url(../images/background.jpg); 
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+	background-attachment: fixed;
+	font-family:"Times New Roman", Helvetica, Arial;
+}
+
+.footer
+{
+	width: 100%;
+	text-align: center;
+}
+
+.footer a
+{
+	text-decoration: none;
+	color: black;
+	
+}
+
+.footer a:hover
+{
+	background-color: white;
+	color: red;
+}
+
+.tandcmain
+{
+	margin: auto;
+	width: 60%;
+	text-align: left;
+	padding-top: 20px;
+}
+	
+
+h1
+{
+	text-align: center;
+	padding-top: 70px;
+	font-size: 3em;
+}
+
+.navbar
+{
+	width:100%;
+	text-align:center;
+	background: #238E23;
+}
+
+.navbar a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.navbar a:hover
+{
+	background-color: white;
+	color:#FF0000;
+}
+
+.navbar a:active
+{
+	background-color: white;
+	color: #238E23;
+}
+
+.socialmedia li
+{
+	list-style-type: none;
+	display: inline;
+	float: right;
+	padding: 0px 30px;
+	margin-right: 30px;
+}
+
+.socialmedia
+{
+	width:100%;
+	
+}
+
+.socialmedia a:hover
+{
+	background-color: red;
+}
+
+.index
+{
+	text-align: center;
+}
+.index h3
+{
+	color: red;
+	font-size: 2em;
+	padding-top: 20px;
+}
+
+.index p
+{
+	font-size: large;
+	margin: 0px 150px 0px 150px;
+}
+
+.index figure
+{
+	padding-bottom: 20px;
+}
+
+.index figcaption
+{
+	font-style: italic;
+	margin: auto;
+}
+
+
+.food p
+{
+	text-align: center;
+	margin: 70px 150px 0px 150px;
+}
+
+.menu
+{
+	text-align: center;
+	font-size: medium;
+	padding-top: 10px;
+	width: 40%;
+	margin: auto;	
+}
+
+.menu th
+{	
+	font-size: large;
+	color: red;
+}
+
+.christmaspudding img
+{
+	border: solid white;
+}
+
+.hotchocolate img
+{
+	border: solid white;
+}
+
+.hotchocolate
+{
+	float: right;
+	margin-right: 150px;
+}
+
+.christmaspudding
+{
+	float:left;
+	margin-left: 70px;
+}
+
+.hotchocolate figcaption
+{
+	font-size: small;
+	text-align: center;
+	font-style: italic;
+}
+
+.christmaspudding figcaption
+{
+	font-size: small;
+	text-align: center;
+	font-style: italic;
+}
+
+.book
+{
+	width: 100%;	
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.book p
+{
+	font-size: large;
+}
+
+.book a
+{
+	text-decoration: none;
+	color: red;	
+}
+
+.book a:hover
+{
+	background-color: white;
+}
+
+
+.expect
+{
+	list-style-type:none;
+	text-align: left;
+	padding-bottom: 10px;
+	margin: auto;
+	width: 65%;
+	padding-top: 20px;
+}
+
+.expect li
+{
+	padding: 10px 0px;
+}
+
+.expect img
+{
+	float: right;
+	
+}
+
+.mrsclaus
+{
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-top: 0px;
+}
+
+.departures
+{
+	text-align: center;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+.departures
+{
+	padding-bottom: 80px;	
+}
+
+.departures li
+{
+	padding-top:50px;
+	font-size: large;
+}
+
+.departures span
+{
+	color: red;
+}
+
+
+.contact
+{
+	width: 70%;
+	padding-top: 100px;
+	padding-bottom: 150px;
+	text-align: center;
+	margin: auto;
+
+}
+
+.contact td
+{
+	padding: 0px 20px;
+}
+
+.contact th
+{	
+	background-color: red;
+
+}
+
+.location
+{
+	width: 70%;
+	padding-top: 100px;
+	padding-bottom: 150px;
+	text-align: center;
+	margin: auto;
+}
+
+.location th
+{	
+	background-color: red;
+
+}
+
+#prices
+{
+	width: 50%;
+	margin: 0px 300px;
+	border-collapse: collapse;
+}
+
+#prices th
+{
+	border: 1px solid white;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+#prices td
+{
+	border: 1px solid white;
+	padding: 10px 0px;
+	text-align: center;
+
+}
+
+#prices th
+{
+	background-color: #238E23;
+}
+
+#prices tr:hover 
+{
+	cursor: pointer;
+	background-color: red;
+	color: white;		
+}
+
+#prices th:hover
+{
+	color: red;
+}
+
+#prices caption
+{
+	caption-side: bottom;
+	text-align: left;
+	font-size: small;
+	font-style: italic;
+}
+
+#bookingdetails fieldset
+{
+	margin: 0px 150px 0px 150px;	
+}
+
+#bookingdetails 
+{
+	padding-bottom: 50px;
+}
+
+
+
+#bookingdetails > p
+{
+	text-align: center;
+	font-size: large;
+	padding-top: 50px;
+}
+
+#bookingdetails p
+{
+	padding-bottom: 10px;
+}
+
+#firstname
+{
+	margin-right: 300px;
+	margin-left: 50px;
+	padding-right: 100px;
+}
+
+#lastname
+{
+	padding-right: 100px;
+}
+
+#email
+{
+	margin-left: 30px;
+	padding-right: 300px;
+}
+
+#address
+{
+	margin-left: 30px;
+	width: 73%;
+	padding-bottom: 30px;
+}
+
+#telephone
+{
+	margin-left: 10px;
+	padding-right: 100px;
+}
+
+#submit
+{
+	margin-left: 550px;
+	font-size: medium;
+	background-color: #238E23; 
+	color: white;
+}
+
+#reset
+{
+	font-size: medium;
+	background-color: #238E23; 
+	color: white;
+}
+
+.personaldetails
+{
+	margin-bottom: 20px;
+}
+
+.bookingconfirmed h2
+{
+	text-align: center;
+	padding-top: 40px;
+}
+
+.bookingconfirmed p 
+{
+	text-align: center;
+	font-size: large;
+	padding-bottom: 100px;
+}
+
+#bookingdate
+{
+	padding-right: 20px;
+}
+
+
+#children
+{
+	float: right;
+	margin-right: 250px;
+}
+
+#adults
+{
+	margin-right: 440px;
+}
+
+.booking p
+{
+	margin-left: 100px;
+}
+
+#adultandchild
+{
+	margin-right: 90px;
+}
+
+#adultonly
+{
+	margin-right: 90px;	
+}
+
+#childonly
+{
+	margin-right: 90px;
+}
+
+.payment p
+{
+	margin-left: 100px;
+}
+
+#visa
+{
+	margin-right: 100px;	
+}
+
+#paypal
+{
+	margin-right: 100px;
+}
+
+#cardnumber
+{
+	padding-right: 20px;
+}
+
+#nameoncard
+{
+	padding-right: 100px;
+}
+
+
+

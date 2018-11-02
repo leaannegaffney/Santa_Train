@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  	<meta charset = "UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<title> Rathwood Express Santa Train </title>
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link rel = "stylesheet" href = "css/style.css">
+</head>
+
+<body>
+<div class = "container-fluid">
+
+<header>
+<h1 class = "bookingdetails"> Booking Details </h1>
+</header>
+
+<nav class="navbar  navbar-expand-md navbar-light bg-success">
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+</button>
+
+
+<div class="collapse navbar-collapse" id="navbarCollapse">
+ 	<ul class="nav navbar-nav mx-auto">
+		<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+   		<li class="nav-item"><a class="nav-link" href="book.html">Book Now</a></li>
+  		<li class="nav-item"><a class="nav-link" href="expect.html">What to Expect</a></li>
+   		<li class="nav-item"><a class="nav-link" href="menu.html">On-board Menu</a></li>
+  		<li class="nav-item"><a class="nav-link" href="departures.html">Departure Times</a></li>
+	</ul>
+
+
+</div>
+
+</nav>
+
+<aside>
+<div class = "row"
+<div class = col-1>
+	<ul class = "socialmedia" class = "list-unstyled">
+		<li><a href = "https://www.facebook.com/rathwoodireland/" target = "_blank"><img src = "images/facebook.png" alt = "Got to Facebook" height = "30" width = "30"></a></li>
+		<li><a href = "https://twitter.com/rathwoodireland?lang=en" target = "_blank"><img src = "images/twitter.png" alt = "Go to Twitter" height = "30" width = "30"></a></li>
+		<li><a href = "https://www.youtube.com/channel/UCeOq1DyCnZnjMhSlo05-0OA" target = "_blank"><img src = "images/youtube.png" alt = "Go to Youtube" height = "30" width = "30"></a></li>
+	</ul>
+</div>
+</div>
+</aside>
+
+<main>
+<p class = "text-center"> 
+	Please enter your details to complete your booking
+</p>
+
+<form id = "bookingdetails" action = "bookingdetails.html" method = "POST" class = "form">
+
+<fieldset class = "personaldetails">
+<legend><b>Personal Details</b></legend>
+
+
+<div class = "form-group form-inline">
+	<label for = "firstname" class = "control-label col-12 col-md-2">First Name</label>
+	<input type = "text" name = "firstname" id = "firstname" required class = "form-control col-12 col-md-10">
+</div>
+
+
+
+<div class = "form-group form-inline">
+	<label for = "lastname" class = "control-label col-12 col-md-2">Last Name</label>
+	<input type = "text" name = "lastname" id = "lastname" required class = "form-control col-12 col-md-10">
+</div>
+
+
+<div class = "form-group form-inline">
+	<label for = "email" class = "control-label col-12 col-md-2">Email Address</label>
+	<input type = "email" name = "email" id = "email" required class = "form-control col-12 col-md-10">
+</div>
+
+
+<div class = "form-group form-inline">
+	<label for = "address" class = "control-label col-12 col-md-2"> Home Address</label>
+	<input type = "text" name = "address" id = "address" required class = "form-control col-12 col-md-10">
+</div>
+<br>
+
+<div class = "form-group form-inline">
+	<label for = "telephone" class = "control-label col-12 col-md-2"> Telehone Number </label>
+	<input type = "tel" name = "telephone" id = "telephone" pattern = "^((\d{3})|\d{3})-?\d{6,9}$" required class = "form-control col-12 col-md-10">
+</div>
+
+</fieldset>
+
+
+<fieldset class = "booking">
+<legend><b>Booking Details</b></legend>
+
+<div class = "form-group form-inline">
+	<label for = "adults" class = "control-label col-12 col-md-4"> Number of Adults </label>
+	<select name = "adults" id = "adults"  class = "form-control col-12 col-md-8">
+		<option value = "1"> 1 </option>
+		<option value = "2"> 2 </option>
+		<option value = "3"> 3 </option>
+		<option value = "4"> 4 </option>
+		<option value = "5"> 5 </option>
+		<option value = "6"> 6 </option>
+		<option value = "7"> 7 </option>
+		<option value = "8"> 8 </option>
+</select>
+</div>
+
+<div class = "form-group form-inline">
+	<label for = "children" class = "control-label col-12 col-md-4"> Number of Children </label>
+	<select name = "children" id = "children" class = "form-control col-12 col-md-8">
+		<option value = "1"> 1 </option>
+		<option value = "2"> 2 </option>
+		<option value = "3"> 3 </option>
+		<option value = "4"> 4 </option>
+		<option value = "5"> 5 </option>
+		<option value = "6"> 6 </option>
+		<option value = "7"> 7 </option>
+		<option value = "8"> 8 </option>
+		<option value = "9"> 9 </option>
+		<option value = "10"> 10 </option>
+	</select>
+</div>
+
+<p>
+	Please choose if you would like to enjoy a meal onboard the Rathwood Express on your return journey from Santa's Woodland Home. 
+</p>
+
+<div class = "form-group form-inline">
+	<input type = "radio" name = "adultandchild" checked = "checked" class = "form-control">
+	<label for = "adultandchild" id = "adultandchild" class = "control-label pl-2"> Adult & Child Meal(s) </label>
+</div>
+
+<div class = "form-group form-inline">
+	<input type = "radio" name = "adultonly" class = "form-control">
+	<label for = "adultonly" id = "adultonly" class = "control-label pl-2"> Adult Only Meal(s) </label>
+</div>
+
+<div class = "form-group form-inline">
+	<input type = "radio" name = "childonly" class = "form-control">
+	<label for = "childonly" id = "childonly" class = "control-label pl-2"> Child Only Meal(s) </label>
+</div>
+
+<div class = "form-group form-inline">
+	<input type = "radio" name = "nomeals" class = "form-control">
+	<label for = "nomeals" id = "nomeals" class = "control-label pl-2"> No Meals </label>
+</div>
+<br>
+
+<p>
+	Please let us know of any dietary requirements or allergies if you have chosen a meal option
+</p>
+<div class = "form-group form-inline">
+	<textarea id="dietaryrequirements" name="dietaryrequirements" rows = "10" cols="100" class = "form-control col-12"></textarea>
+</div>
+<br>
+
+<p>
+	Please let us know of any special requirements or disabilities so we can ensure your journey is extra magical
+</p>
+<div class = "form-group form-inline">
+	<textarea id="disabilities" name="disabilities" rows = "10" cols="100" class = "form-control col-12"></textarea>
+</div>
+
+</fieldset>
+
+
+<fieldset class = "payment">
+<legend><b>Payment Details</b></legend>
+
+<br>
+<p>
+	Please choose a payment option 
+</p>
+
+
+<div class = "form-group form-inline">
+	<input style = "float-left" type = "radio" name = "visa" checked="checked" class = "form-control">
+	<label for = "visa" style = "float-left" id = "visa" class = "pl-2">Visa Debit</label>
+</div>
+
+<div class = "form-group form-inline">
+	<input style = "float-left" type = "radio" name = "paypal" class = "form-control">
+	<label for = "paypal" style = "float-left" id = "paypal" class = "pl-2">PayPal</label>
+</div>
+
+<div class = "form-group form-inline">
+	<input style = "float-left" type = "radio" name = "mastercard" class = "form-control">
+	<label for = "mastercard" style = "float-left" id = "mastercard" class = "pl-2">Master Card</label>
+</div>
+<br>
+
+<div class = "form-group form-inline">
+	<label for = "cardnumber" class = "control-label col-12 col-md-2"> Card Number</label>
+	<input type = "number" pattern=".{16}" name = "cardnumber" id = "cardnumber" required class = "form-control col-12 col-md-10">
+</div>
+
+<div class = "form-group form-inline">
+	<label for = "nameoncard" class = "control-label col-12 col-md-2"> Name on Card</label>
+	<input type = "text" name = "nameoncard" id = "nameoncard" required class = "form-control col-12 col-md-10">
+</div>
+
+<div class = "form-group form-inline"">
+	<label for = "cvv" class = "control-label col-12 col-md-2"> CVV Number</label>
+	<input type = "number" pattern="[A-Za-z]{3}" name = "cvv" id = "cvv" required class = "form-control col-12 col-md-10">
+</div>
+
+<div class = "form-group form-inline">
+	<label for = "expiry" class = "control-label col-12 col-md-2"> Expiry Date</label>
+	<input type = "date" name = "expiry" id = "expiry" required class = "form-control col-12 col-md-10">
+</div> 
+
+</fieldset>
+</div>
+
+<div class = "mx-auto">
+<div class = "form-group form-inline">
+	<input type = "submit" style = "clear:left" id = "submit" class = "btn btn-success">
+	<input type = "reset" value = "Start Over" id = "reset" class = "btn btn-success">
+</div>
+
+</form>
+
+</main>
+
+<footer class = "text-center">
+
+<div class = "row">
+<div class = "col-4">
+	<p class = "mx-auto">
+		<a href="contact.html" class = "btn btn-danger" > Contact Us </a>
+	</p>
+</div>
+
+<div class = "col-4">
+	<p class = "mx-auto">
+		<a href="t&c's.html" class = "btn btn-danger" > T&C's</a>
+	</p>
+</div>
+
+<div class = "col-4">
+	<p class = "mx-auto">
+		<a href="location.html" class = "btn btn-danger" > Location</a>
+	</p>
+</div>
+</div>
+
+</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
